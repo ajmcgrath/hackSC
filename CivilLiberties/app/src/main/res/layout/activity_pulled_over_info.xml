@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pulledOverInfo">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="413dp"
+        android:layout_height="733dp"
+        android:background="#455a64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/WNTD"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/wntdInfo"
+        android:layout_width="380dp"
+        android:layout_height="271dp"
+        android:layout_margin="10dp"
+
+        android:padding="10dp"
+        android:text="1) Do NOT reach for documents until asked by the officer\n\n2) Do NOT physically resist search\n\n3) Refusal to sign a ticket or take a DUI test may lead to your arrest\n\n4) Do not disrespect the police officer"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WTD"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <TextView
+        android:id="@+id/wtdInfo"
+        android:layout_width="392dp"
+        android:layout_height="263dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="1) Keep your hands on the wheel \n\n2) Let the officer know if you need to reach for something\n\n3) Show license, registration and proof of insurance when asked\n\n4) Say 'I do not consent to a search'"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/WTD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WNTD" />
+
+    <TextView
+        android:id="@+id/WTD"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:background="#FF9999"
+        android:gravity="center"
+        android:text="What Not To Do"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WNTD"
+        android:layout_width="414dp"
+        android:layout_height="53dp"
+        android:background="#CCFF99"
+        android:gravity="center"
+        android:text="What To Do"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="-83dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
