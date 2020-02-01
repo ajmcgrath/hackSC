@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Civil Liberties</string>
     <string name="record_button">RECORD</string>
+    <color name="dark">#455A64</color>
 </resources>

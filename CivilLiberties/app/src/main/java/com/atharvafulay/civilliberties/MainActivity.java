@@ -20,6 +20,12 @@ import android.util.Log;
 import android.support.v4.app.*;
 import androidx.core.app.ActivityCompat;
 import java.io.IOException;
+import android.os.Bundle;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Toast;
+import android.view.ViewGroup;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
     //recording vars
@@ -49,12 +55,74 @@ public class MainActivity extends AppCompatActivity {
         if (!permissionToRecordAccepted ) finish();
 
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         handler = new Handler() ;
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
+
+        // Text and Main items list
+        TextView calmText = (TextView) findViewById(R.id.calm_text);
+        calmText.setText("Remember to remain calm. \nDo not panic. \nErratic actions will only make the officer nervous.");
+        calmText.setTextColor(Color.WHITE);
+
+        final ListView listView =
+                (ListView) this.findViewById(R.id.list_content);
+
+        // Defined Array values to show in ListView
+        String[] values = new String[] {
+                "I've been pulled over.",
+                "A police man is knocking at my front door.",
+                "I was in an accident.",
+                "I was stopped by the police (not in a vehicle)"
+        };
+
+        // Define a new Adapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                (this, R.layout.row, values){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent){
+                // Get the Item from ListView
+                View view = super.getView(position, convertView, parent);
+
+                // Initialize a TextView for ListView each Item
+                TextView tv = (TextView) view.findViewById(android.R.id.text1);
+
+                // Set the text color of TextView (ListView Item)
+                tv.setTextColor(Color.WHITE);
+
+                // Generate ListView Item using TextView
+                return view;
+            }
+        };
+
+        // Assign adapter to ListView
+        listView.setAdapter(adapter);
+
+        // ListView Item Click Listener
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+
+                // ListView Clicked item index
+                int itemPosition     = position;
+
+                // ListView Clicked item value
+                String  itemValue    = (String) listView.getItemAtPosition(position);
+
+                // Show Alert
+                Toast.makeText(getApplicationContext(),
+                        "Position :"+itemPosition+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
+                        .show();
+
+            }
+
+        });
+
         //home button code
         final Button copButton = findViewById(R.id.copButton);
         copButton.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 openPulledOverInfo();
             }
         });
+
         //profile button code
         final Button profileButton = findViewById(R.id.profileButton);
         profileButton.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
         //record button code
         fileName = getExternalCacheDir().getAbsolutePath();
         fileName += "/pullover.3gp";
@@ -116,6 +186,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     //Page changing methods
     public void openPulledOverInfo(){
         Intent intent = new Intent(this, pulledOverInfo.class);
@@ -144,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
         recorder.release();
         recorder = null;
     }
+
     //Timer runnable
     public Runnable recordRunnable = new Runnable() {
 
