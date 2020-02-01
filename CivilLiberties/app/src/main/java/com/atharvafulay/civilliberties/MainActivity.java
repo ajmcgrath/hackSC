@@ -2,6 +2,7 @@ package com.atharvafulay.civilliberties;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.widget.Button;
 import android.view.View;
@@ -22,11 +23,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //record button code
         handler = new Handler() ;
-
-        //Add OnClickEvents to the button that responds to the user event
+        //record button code
+        final Button copButton = findViewById(R.id.copButton);
+        copButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPulledOverInfo();
+            }
+        });
+        //record button code
         final Button recordButton = findViewById(R.id.recordButton);
         recordButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,20 +46,25 @@ public class MainActivity extends AppCompatActivity {
                     Seconds = 0 ;
                     Minutes = 0 ;
                     MilliSeconds = 0 ;
-                    handler.removeCallbacks(runnable);
+                    handler.removeCallbacks(recordRunnable);
                     recordButton.setText(R.string.record_button);
                 }
                 else{
                     recordButton.setBackgroundColor(getResources().getColor(R.color.button_pressed));
                     StartTime = SystemClock.uptimeMillis();
-                    handler.postDelayed(runnable, 0);
+                    handler.postDelayed(recordRunnable, 0);
                 }
                 recordState++;
             }
         });
     }
-
-    public Runnable runnable = new Runnable() {
+    //Page changing methods
+    public void openPulledOverInfo(){
+        Intent intent = new Intent(this, pulledOverInfo.class);
+        startActivity(intent);
+    }
+    //Timer runnable
+    public Runnable recordRunnable = new Runnable() {
 
         public void run() {
             final Button recordButton = findViewById(R.id.recordButton);
