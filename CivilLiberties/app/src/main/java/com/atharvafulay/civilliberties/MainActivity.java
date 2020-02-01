@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Defined Array values to show in ListView
         String[] values = new String[] {
-                "I've been pulled over.",
-                "A police man is knocking at my front door.",
+                "I have been pulled over.",
+                "A police officer is knocking at my front door.",
                 "I was in an accident.",
-                "I was stopped by the police (not in a vehicle)"
+                "I was stopped by the police (not in a vehicle)."
         };
 
         // Define a new Adapter
@@ -109,27 +109,22 @@ public class MainActivity extends AppCompatActivity {
                                     int position, long id) {
 
                 // ListView Clicked item index
-                int itemPosition     = position;
+//                int itemPosition     = position;
 
                 // ListView Clicked item value
                 String  itemValue    = (String) listView.getItemAtPosition(position);
 
+                if (position == 0) {
+                    openPulledOverInfo();
+                }
+
                 // Show Alert
-                Toast.makeText(getApplicationContext(),
-                        "Position :"+itemPosition+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
-                        .show();
+//                Toast.makeText(getApplicationContext(),
+//                        "Position :"+itemPosition+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
+//                        .show();
 
             }
 
-        });
-
-        //home button code
-        final Button copButton = findViewById(R.id.copButton);
-        copButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPulledOverInfo();
-            }
         });
 
         //profile button code
