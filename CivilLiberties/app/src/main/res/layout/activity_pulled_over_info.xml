@@ -17,14 +17,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/WNTD"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.274">
 
     </FrameLayout>
 
     <TextView
         android:id="@+id/wntdInfo"
-        android:layout_width="380dp"
-        android:layout_height="271dp"
+        android:layout_width="372dp"
+        android:layout_height="267dp"
         android:layout_margin="10dp"
 
         android:padding="10dp"
@@ -41,8 +41,8 @@
 
     <TextView
         android:id="@+id/wtdInfo"
-        android:layout_width="392dp"
-        android:layout_height="263dp"
+        android:layout_width="378dp"
+        android:layout_height="242dp"
         android:layout_margin="10dp"
         android:padding="10dp"
         android:text="1) Keep your hands on the wheel \n\n2) Let the officer know if you need to reach for something\n\n3) Show license, registration and proof of insurance when asked\n\n4) Say 'I do not consent to a search'"
@@ -56,8 +56,8 @@
 
     <TextView
         android:id="@+id/WTD"
-        android:layout_width="411dp"
-        android:layout_height="51dp"
+        android:layout_width="412dp"
+        android:layout_height="62dp"
         android:background="#FF9999"
         android:gravity="center"
         android:text="What Not To Do"
@@ -71,8 +71,8 @@
 
     <TextView
         android:id="@+id/WNTD"
-        android:layout_width="414dp"
-        android:layout_height="53dp"
+        android:layout_width="423dp"
+        android:layout_height="62dp"
         android:background="#CCFF99"
         android:gravity="center"
         android:text="What To Do"
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/copButton"
+        android:id="@+id/homeButton"
         android:layout_width="136dp"
         android:layout_height="82dp"
         android:background="@color/button_default"

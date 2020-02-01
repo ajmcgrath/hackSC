@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/copButton"
+        android:id="@+id/homeButton"
         android:layout_width="136dp"
         android:layout_height="82dp"
         android:background="@color/button_default"
