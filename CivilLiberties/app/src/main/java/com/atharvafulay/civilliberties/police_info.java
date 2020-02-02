@@ -15,7 +15,7 @@ public class police_info extends AppCompatActivity {
         setContentView(R.layout.police_info);
 
         final Button interact = findViewById(R.id.interactButton);
-        create.setOnClickListener(new View.OnClickListener() {
+        interact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(police_info.this, sendMessage.class);

@@ -9,9 +9,6 @@
     android:background="@drawable/my_button_bg"
     tools:context=".pulledOverInfo">
 
-
-
-
     <TextView
         android:id="@+id/wtdInfo"
         android:layout_width="375dp"

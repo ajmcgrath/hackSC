@@ -19,52 +19,59 @@
         app:srcCompat="@mipmap/man_cop_foreground" />
 
     <Button
-        android:id="@+id/homeButton"
-        android:drawableTop="@drawable/ic_home"
-        android:layout_gravity="center"
+        android:id="@+id/recordButton"
         android:layout_width="138dp"
         android:layout_height="82dp"
-        android:background="@drawable/my_button_bg"
-        android:text="HOME"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/profileButton"
-        android:drawableTop="@drawable/ic_profile"
         android:layout_gravity="center"
-        android:layout_width="138dp"
-        android:layout_height="82dp"
         android:background="@drawable/my_button_bg"
-        android:text="PROFILE"
+        android:drawableTop="@drawable/ic_mic"
+        android:paddingTop="25dp"
+        android:text="@string/record_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/recordButton"
-        android:drawableTop="@drawable/ic_mic"
+        android:id="@+id/interactButton"
+        android:drawableTop="@drawable/ic_profile"
+
         android:layout_width="138dp"
         android:layout_height="82dp"
         android:background="@drawable/my_button_bg"
-        android:text="@string/record_button"
+
+        android:text="Interact"
+        android:paddingTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="138dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:background="@drawable/my_button_bg"
+        android:drawableTop="@drawable/ic_home"
+        android:paddingTop="25dp"
+        android:text="HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="295dp"
         android:layout_height="201dp"
+        android:text="Officer Dan Williams\n\nLos Angeles County\n\nBadge No. 3256"
         android:textColor="#FFF"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:text="Officer Dan Williams\n\nLos Angeles County\n\nBadge No. 3256"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintBottom_toTopOf="@+id/profileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
