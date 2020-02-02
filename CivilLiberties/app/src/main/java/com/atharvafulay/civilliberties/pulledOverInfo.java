@@ -23,7 +23,7 @@ public class pulledOverInfo extends AppCompatActivity {
         });
     }
     public void openHome(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, driverHome.class);
         startActivity(intent);
     }
 }
