@@ -32,9 +32,9 @@
 
         <Button
             android:id="@+id/copButton"
-            android:layout_width="136dp"
+            android:layout_width="138dp"
             android:layout_height="82dp"
-            android:background="@color/button_default"
+            android:background="@drawable/my_button_bg"
             android:text="HOME"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,9 +45,9 @@
 
         <Button
             android:id="@+id/profileButton"
-            android:layout_width="136dp"
+            android:layout_width="138dp"
             android:layout_height="82dp"
-            android:background="@color/button_default"
+            android:background="@drawable/my_button_bg"
             android:text="PROFILE"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,9 +58,9 @@
 
         <Button
             android:id="@+id/recordButton"
-            android:layout_width="136dp"
+            android:layout_width="138dp"
             android:layout_height="82dp"
-            android:background="@color/button_default"
+            android:background="@drawable/my_button_bg"
             android:text="@string/record_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

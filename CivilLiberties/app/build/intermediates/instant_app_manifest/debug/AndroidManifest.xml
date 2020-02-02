@@ -9,6 +9,7 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -31,10 +32,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.atharvafulay.civilliberties.MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/record_background" />
+
         <activity android:name="com.atharvafulay.civilliberties.pulledOverInfo" />
-        <activity android:name="com.atharvafulay.civilliberties.Login" >
-        </activity>
+        <activity android:name="com.atharvafulay.civilliberties.driverHome" />
+        <activity android:name="com.atharvafulay.civilliberties.MainActivity" />
+        <activity android:name="com.atharvafulay.civilliberties.Login" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

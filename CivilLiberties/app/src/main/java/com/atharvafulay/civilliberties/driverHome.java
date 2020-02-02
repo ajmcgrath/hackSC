@@ -156,7 +156,7 @@ public class driverHome extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(recordState % 2 == 0){
-                    recordButton.setBackgroundColor(getResources().getColor(R.color.button_default));
+                    recordButton.setBackgroundResource(R.drawable.my_button_bg);
                     MillisecondTime = 0L ;
                     StartTime = 0L ;
                     TimeBuff = 0L ;
@@ -169,7 +169,7 @@ public class driverHome extends AppCompatActivity {
                     stopRecording();
                 }
                 else{
-                    recordButton.setBackgroundColor(getResources().getColor(R.color.button_pressed));
+                    recordButton.setBackgroundResource(R.drawable.record_background);
                     StartTime = SystemClock.uptimeMillis();
                     handler.postDelayed(recordRunnable, 0);
                     startRecording();
