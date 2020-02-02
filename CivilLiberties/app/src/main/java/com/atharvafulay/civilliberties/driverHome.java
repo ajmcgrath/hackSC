@@ -198,7 +198,14 @@ public class driverHome extends AppCompatActivity {
                 dialogInterface.cancel();
             }
         });
-        builder.show();
+        final AlertDialog.Builder alertBuilder = builder;
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                alertBuilder.show();
+            }
+        }, 5000);
+
     }
 
     public void openPoliceInfo(){

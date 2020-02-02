@@ -1089,6 +1089,8 @@ drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
+id M1
+id M2
 id META
 id SHIFT
 id SYM
@@ -1194,10 +1196,10 @@ id direct
 id disableHome
 id driverButton
 id edit_query
-id edittext_chatbox
 id edtEmail
 id edtEmailB
 id edtLicense
+id edtMessage
 id edtName
 id edtPassword
 id edtPasswordB
@@ -1239,7 +1241,6 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
-id layout_chatbox
 id left
 id light
 id line1
@@ -1360,7 +1361,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id view
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
