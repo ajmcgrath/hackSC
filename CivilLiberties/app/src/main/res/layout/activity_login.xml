@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="#455a64">
 
 
     <TextView
@@ -12,8 +13,10 @@
         android:layout_width="140dp"
         android:layout_height="56dp"
         android:gravity="center"
-        android:text="SignUp"
-        android:textSize="20dp"
+        android:text="Sign Up"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +27,13 @@
         android:id="@+id/edtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Name (First Last)"
         android:inputType="textPersonName"
+        android:textColorHint="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -36,11 +41,13 @@
         android:id="@+id/edtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Email"
+        android:textColorHint="#FFF"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtName" />
 
@@ -48,8 +55,10 @@
         android:id="@+id/edtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Password"
+        android:textColorHint="#FFF"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -60,9 +69,10 @@
         android:id="@+id/edtLicense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
-
         android:hint="License Plate"
+        android:textColorHint="#FFF"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -73,11 +83,13 @@
         android:id="@+id/edtPhoneNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Phone Number"
+        android:textColorHint="#FFF"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
@@ -94,6 +106,7 @@
         android:id="@+id/btnToRegister"
         android:layout_width="234dp"
         android:layout_height="52dp"
+        android:layout_marginTop="32dp"
         android:text="Register Now"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -101,4 +114,3 @@
         app:layout_constraintTop_toBottomOf="@+id/edtLicense" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
