@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +8,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/my_button_bg"
     tools:context=".pulledOverInfo">
+
+
 
 
     <TextView
@@ -81,25 +85,13 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/homeButton"
-        android:drawableTop="@drawable/ic_home"
-        android:layout_gravity="center"
-        android:layout_width="138dp"
-        android:layout_height="82dp"
-        android:background="@drawable/my_button_bg"
-        android:text="HOME"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/profileButton"
-        android:drawableTop="@drawable/ic_profile"
-        android:layout_gravity="center"
         android:layout_width="138dp"
         android:layout_height="82dp"
+        android:layout_gravity="center"
         android:background="@drawable/my_button_bg"
+        android:drawableTop="@drawable/ic_profile"
+        android:paddingTop="25dp"
         android:text="PROFILE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,9 +105,24 @@
         android:layout_height="82dp"
         android:background="@drawable/my_button_bg"
         android:text="@string/record_button"
+        android:paddingTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="138dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:background="@drawable/my_button_bg"
+        android:drawableTop="@drawable/ic_home"
+        android:paddingTop="25dp"
+        android:text="HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 
