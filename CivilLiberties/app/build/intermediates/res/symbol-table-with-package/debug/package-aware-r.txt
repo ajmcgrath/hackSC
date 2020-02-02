@@ -1066,6 +1066,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_police_background
 drawable ic_profile
+drawable main_button
 drawable man_cop_background
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
