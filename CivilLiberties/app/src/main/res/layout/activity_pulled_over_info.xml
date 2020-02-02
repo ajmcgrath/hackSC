@@ -4,56 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#455a64"
     tools:context=".pulledOverInfo">
 
 
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="413dp"
-        android:layout_height="733dp"
-        android:background="#455a64"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/WNTD"
-        app:layout_constraintVertical_bias="0.274">
-
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/wntdInfo"
-        android:layout_width="378dp"
-        android:layout_height="245dp"
-        android:layout_margin="10dp"
-
-        android:background="#3C3E3F"
-        android:padding="10dp"
-        android:text="1) Do not reach for documents until asked by the officer\n\n2) Do not physically resist search. Say &quot;I do not consent to a search&quot;\n\n3) Do not disrespect the police officer"
-        android:textColor="#FFF"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WTD"
-        app:layout_constraintVertical_bias="0.556" />
-
     <TextView
         android:id="@+id/wtdInfo"
-        android:layout_width="380dp"
-        android:layout_height="281dp"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
         android:layout_margin="10dp"
         android:padding="10dp"
         android:text="1) Keep your hands on the wheel \n\n2) Show license, registration and proof of insurance when asked\n\n3) You must sign a traffic ticket if asked. Refusal may lead to your arrest\n\n4) You must submit to a DUI test if asked. Refusal may lead to your arrest"
         android:textColor="#FFF"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/WTD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WNTD" />
+
+    <TextView
+        android:id="@+id/wntdInfo"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="1) Do not reach for documents until asked by the officer\n\n2) Do not physically resist search. Say &quot;I do not consent to a search&quot;\n\n3) Do not disrespect the police officer\n\n4) Do no play loud music while speaking with the officer"
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WTD" />
 
     <TextView
         android:id="@+id/WTD"
@@ -64,11 +48,11 @@
         android:text="What Not To Do"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/profileButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/WNTD" />
 
     <TextView
         android:id="@+id/WNTD"
@@ -107,9 +91,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/profileButton"
@@ -122,9 +104,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/recordButton"
@@ -136,9 +116,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
