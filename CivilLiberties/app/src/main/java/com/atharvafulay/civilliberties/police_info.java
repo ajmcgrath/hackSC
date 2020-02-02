@@ -18,9 +18,12 @@ public class police_info extends AppCompatActivity {
         interact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(police_info.this, sendMessage.class);
-                startActivity(intent);
+                openSendMessage();
             }
         });
+    }
+    public void openSendMessage(){
+        Intent intent = new Intent(this, sendMessage.class);
+        startActivity(intent);
     }
 }

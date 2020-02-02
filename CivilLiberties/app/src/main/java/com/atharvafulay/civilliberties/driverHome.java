@@ -1,6 +1,7 @@
 package com.atharvafulay.civilliberties;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 
 import java.io.IOException;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -177,6 +179,31 @@ public class driverHome extends AppCompatActivity {
                 recordState++;
             }
         });
+
+        //POPUP TEMP
+        ///////////////////////////////////////////////////////////////////////////
+        AlertDialog.Builder builder = new AlertDialog.Builder(driverHome.this);
+        builder.setCancelable(true);
+        builder.setTitle("Contact Alert");
+        builder.setMessage("A policeman is trying to contact you");
+        builder.setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                openPoliceInfo();
+            }
+        });
+        builder.setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        builder.show();
+    }
+
+    public void openPoliceInfo(){
+        Intent intent = new Intent(this, police_info.class);
+        startActivity(intent);
     }
 
     //Page changing methods
