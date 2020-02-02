@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/my_button_bg">
 
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="418dp"
+        android:layout_height="567dp"
+        android:layout_marginBottom="284dp"
+        app:layout_constraintBottom_toTopOf="@+id/profileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/man_cop_foreground" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:drawableTop="@drawable/ic_home"
+        android:layout_gravity="center"
+        android:layout_width="138dp"
+        android:layout_height="82dp"
+        android:background="@drawable/my_button_bg"
+        android:text="HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:drawableTop="@drawable/ic_profile"
+        android:layout_gravity="center"
+        android:layout_width="138dp"
+        android:layout_height="82dp"
+        android:background="@drawable/my_button_bg"
+        android:text="PROFILE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/recordButton"
+        android:drawableTop="@drawable/ic_mic"
+        android:layout_width="138dp"
+        android:layout_height="82dp"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/record_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="295dp"
+        android:layout_height="201dp"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Officer Dan Williams\n\nLos Angeles County\n\nBadge No. 3256"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
