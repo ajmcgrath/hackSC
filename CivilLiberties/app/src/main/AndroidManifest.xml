@@ -9,18 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".baseLogin">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".pulledOverInfo" />
-        <activity android:name=".Login">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/record_background" />
+        <activity android:name=".pulledOverInfo"></activity>
+        <activity android:name=".driverHome"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Login"></activity>
 
-        </activity>
+
+
     </application>
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 </manifest>

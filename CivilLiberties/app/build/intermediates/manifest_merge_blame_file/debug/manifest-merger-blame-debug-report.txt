@@ -1,0 +1,161 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.atharvafulay.civilliberties"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:25:5-79
+13-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:25:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:26:5-67
+14-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:26:22-64
+15
+16    <application
+16-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:5:5-24:19
+17        android:allowBackup="true"
+17-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:6:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\e91594602c73eba9f0c6fb1745d43dba\core-1.1.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:7:9-43
+21        android:label="@string/app_name"
+21-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:8:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:9:9-54
+23        android:supportsRtl="true"
+23-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:10:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:11:9-40
+26        <activity android:name="com.atharvafulay.civilliberties.baseLogin" >
+26-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:12:9-18:20
+26-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:12:19-44
+27            <intent-filter>
+27-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:13:13-17:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:14:17-69
+28-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:14:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:16:17-77
+30-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:16:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity android:name="com.atharvafulay.civilliberties.MainActivity" />
+33-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:19:9-50
+33-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:19:19-47
+34        <activity android:name="com.atharvafulay.civilliberties.pulledOverInfo" />
+34-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:20:9-52
+34-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:20:19-49
+35        <activity android:name="com.atharvafulay.civilliberties.Login" >
+35-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:21:9-23:20
+35-->C:\HackSC2020\hackSC\CivilLiberties\app\src\main\AndroidManifest.xml:21:19-40
+36        </activity>
+37        <activity
+37-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+38            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+38-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+39            android:excludeFromRecents="true"
+39-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+40            android:exported="false"
+40-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+41            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+41-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+42        <!--
+43            Service handling Google Sign-In user revocation. For apps that do not integrate with
+44            Google Sign-In, this service will never be started.
+45        -->
+46        <service
+46-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+47            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+47-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+48            android:exported="true"
+48-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+49            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+49-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+50
+51        <activity
+51-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:24:9-31:50
+52            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+52-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:25:13-85
+53            android:excludeFromRecents="true"
+53-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:26:13-46
+54            android:exported="true"
+54-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:27:13-36
+55            android:launchMode="singleTask"
+55-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:28:13-44
+56            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+56-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:29:13-102
+57            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+57-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:30:13-72
+58
+59        <service
+59-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
+60            android:name="com.google.firebase.components.ComponentDiscoveryService"
+60-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:34:13-84
+61            android:exported="false" >
+61-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:35:13-37
+62            <meta-data
+62-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:36:13-38:85
+63                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+63-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:37:17-109
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\deefc7a5fc7444f32ea5760ea7d74a2e\jetified-firebase-auth-17.0.0\AndroidManifest.xml:38:17-82
+65            <meta-data
+65-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:30:13-32:85
+66                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+66-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:31:17-109
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.firebase:firebase-database:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\b46e8f7dbbf3d504601540629ef1d1ab\jetified-firebase-database-17.0.0\AndroidManifest.xml:32:17-82
+68        </service>
+69
+70        <activity
+70-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+71            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+71-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+72            android:exported="false"
+72-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+74
+75        <provider
+75-->[com.google.firebase:firebase-common:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\1bd85dff2be134fb304c1792452c6a8a\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+76            android:name="com.google.firebase.provider.FirebaseInitProvider"
+76-->[com.google.firebase:firebase-common:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\1bd85dff2be134fb304c1792452c6a8a\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+77            android:authorities="com.atharvafulay.civilliberties.firebaseinitprovider"
+77-->[com.google.firebase:firebase-common:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\1bd85dff2be134fb304c1792452c6a8a\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+78            android:exported="false"
+78-->[com.google.firebase:firebase-common:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\1bd85dff2be134fb304c1792452c6a8a\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+79            android:initOrder="100" />
+79-->[com.google.firebase:firebase-common:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\1bd85dff2be134fb304c1792452c6a8a\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\21e0f2c3f13b227ad958bd3a659f6252\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\21e0f2c3f13b227ad958bd3a659f6252\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\21e0f2c3f13b227ad958bd3a659f6252\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+84
+85        <provider
+85-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+86            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+86-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+87            android:authorities="com.atharvafulay.civilliberties.lifecycle-process"
+87-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+88            android:exported="false"
+88-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+89            android:multiprocess="true" />
+89-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\drewm_000\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+90    </application>
+91
+92</manifest>

@@ -17,19 +17,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/WNTD"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.274">
 
     </FrameLayout>
 
     <TextView
         android:id="@+id/wntdInfo"
-        android:layout_width="380dp"
-        android:layout_height="271dp"
+        android:layout_width="378dp"
+        android:layout_height="245dp"
         android:layout_margin="10dp"
 
         android:background="#3C3E3F"
         android:padding="10dp"
-        android:text="1) Do NOT reach for documents until asked by the officer\n\n2) Do NOT physically resist search\n\n3) Refusal to sign a ticket or take a DUI test may lead to your arrest\n\n4) Do not disrespect the police officer"
+        android:text="1) Do not reach for documents until asked by the officer\n\n2) Do not physically resist search. Say &quot;I do not consent to a search&quot;\n\n3) Do not disrespect the police officer"
         android:textColor="#FFF"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -42,11 +42,11 @@
 
     <TextView
         android:id="@+id/wtdInfo"
-        android:layout_width="392dp"
-        android:layout_height="263dp"
+        android:layout_width="380dp"
+        android:layout_height="281dp"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:text="1) Keep your hands on the wheel \n\n2) Let the officer know if you need to reach for something\n\n3) Show license, registration and proof of insurance when asked\n\n4) Say 'I do not consent to a search'"
+        android:text="1) Keep your hands on the wheel \n\n2) Show license, registration and proof of insurance when asked\n\n3) You must sign a traffic ticket if asked. Refusal may lead to your arrest\n\n4) You must submit to a DUI test if asked. Refusal may lead to your arrest"
         android:textColor="#FFF"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -57,8 +57,8 @@
 
     <TextView
         android:id="@+id/WTD"
-        android:layout_width="411dp"
-        android:layout_height="51dp"
+        android:layout_width="412dp"
+        android:layout_height="62dp"
         android:background="#FF9999"
         android:gravity="center"
         android:text="What Not To Do"
@@ -72,8 +72,8 @@
 
     <TextView
         android:id="@+id/WNTD"
-        android:layout_width="414dp"
-        android:layout_height="53dp"
+        android:layout_width="423dp"
+        android:layout_height="62dp"
         android:background="#CCFF99"
         android:gravity="center"
         android:text="What To Do"
@@ -95,6 +95,50 @@
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:drawableTop="@drawable/ic_home"
+        android:layout_gravity="center"
+        android:layout_width="136dp"
+        android:layout_height="82dp"
+        android:background="@color/button_default"
+        android:text="HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:drawableTop="@drawable/ic_profile"
+        android:layout_gravity="center"
+        android:layout_width="136dp"
+        android:layout_height="82dp"
+        android:background="@color/button_default"
+        android:text="PROFILE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/recordButton"
+        android:drawableTop="@drawable/ic_mic"
+        android:layout_width="136dp"
+        android:layout_height="82dp"
+        android:background="@color/button_default"
+        android:text="@string/record_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
