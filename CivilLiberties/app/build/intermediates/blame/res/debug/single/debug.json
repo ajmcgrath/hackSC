@@ -260,12 +260,12 @@
         "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\42dfa75dd97f65b6f13ab377026b4c61\\material-1.0.0\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
@@ -484,12 +484,12 @@
         "source": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
-        "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_button_bg.xml.flat",
         "source": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\src\\main\\res\\drawable\\my_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -506,6 +506,10 @@
     {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout_message_box_red.xml.flat",
+        "source": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\src\\main\\res\\layout\\message_box_red.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
@@ -1340,6 +1344,10 @@
         "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\42dfa75dd97f65b6f13ab377026b4c61\\material-1.0.0\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
+        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_send_message.xml.flat",
+        "source": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\src\\main\\res\\layout\\activity_send_message.xml"
+    },
+    {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\color\\abc_tint_btn_checkable.xml"
     },
@@ -2106,6 +2114,10 @@
     {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
         "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout_message_box_blue.xml.flat",
+        "source": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\src\\main\\res\\layout\\message_box_blue.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\Desktop\\hacksc\\hackSC\\CivilLiberties\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",

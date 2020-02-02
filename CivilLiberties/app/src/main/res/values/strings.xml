@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Civil Liberties</string>
+    <string name="app_name"> SAYFR</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

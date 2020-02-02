@@ -41,6 +41,8 @@
         <activity android:name="com.atharvafulay.civilliberties.driverHome" />
         <activity android:name="com.atharvafulay.civilliberties.MainActivity" />
         <activity android:name="com.atharvafulay.civilliberties.Login" />
+        <activity android:name="com.atharvafulay.civilliberties.police_info" />
+        <activity android:name="com.atharvafulay.civilliberties.sendMessage" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
