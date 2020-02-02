@@ -27,6 +27,7 @@
         android:layout_height="271dp"
         android:layout_margin="10dp"
 
+        android:background="#3C3E3F"
         android:padding="10dp"
         android:text="1) Do NOT reach for documents until asked by the officer\n\n2) Do NOT physically resist search\n\n3) Refusal to sign a ticket or take a DUI test may lead to your arrest\n\n4) Do not disrespect the police officer"
         android:textColor="#FFF"
