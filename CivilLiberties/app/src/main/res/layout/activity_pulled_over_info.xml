@@ -23,12 +23,12 @@
 
     <TextView
         android:id="@+id/wntdInfo"
-        android:layout_width="372dp"
-        android:layout_height="267dp"
+        android:layout_width="378dp"
+        android:layout_height="245dp"
         android:layout_margin="10dp"
 
         android:padding="10dp"
-        android:text="1) Do NOT reach for documents until asked by the officer\n\n2) Do NOT physically resist search\n\n3) Refusal to sign a ticket or take a DUI test may lead to your arrest\n\n4) Do not disrespect the police officer"
+        android:text="1) Do not reach for documents until asked by the officer\n\n2) Do not physically resist search. Say &quot;I do not consent to a search&quot;\n\n3) Do not disrespect the police officer"
         android:textColor="#FFF"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -41,11 +41,11 @@
 
     <TextView
         android:id="@+id/wtdInfo"
-        android:layout_width="378dp"
-        android:layout_height="242dp"
+        android:layout_width="380dp"
+        android:layout_height="281dp"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:text="1) Keep your hands on the wheel \n\n2) Let the officer know if you need to reach for something\n\n3) Show license, registration and proof of insurance when asked\n\n4) Say 'I do not consent to a search'"
+        android:text="1) Keep your hands on the wheel \n\n2) Show license, registration and proof of insurance when asked\n\n3) You must sign a traffic ticket if asked. Refusal may lead to your arrest\n\n4) You must submit to a DUI test if asked. Refusal may lead to your arrest"
         android:textColor="#FFF"
         android:textSize="20dp"
         android:textStyle="bold"
