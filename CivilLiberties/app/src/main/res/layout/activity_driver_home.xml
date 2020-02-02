@@ -31,43 +31,48 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/copButton"
+            android:id="@+id/homeButton"
             android:layout_width="138dp"
             android:layout_height="82dp"
+            android:layout_gravity="center"
             android:background="@drawable/my_button_bg"
+            android:drawableTop="@drawable/ic_home"
+            android:paddingTop="25dp"
             android:text="HOME"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1" />
-
-        <Button
-            android:id="@+id/profileButton"
-            android:layout_width="138dp"
-            android:layout_height="82dp"
-            android:background="@drawable/my_button_bg"
-            android:text="PROFILE"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/recordButton"
+            android:drawableTop="@drawable/ic_mic"
             android:layout_width="138dp"
             android:layout_height="82dp"
             android:background="@drawable/my_button_bg"
             android:text="@string/record_button"
+            android:paddingTop="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/profileButton"
+
+            android:layout_width="138dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:background="@drawable/my_button_bg"
+            android:drawableTop="@drawable/ic_profile"
+
+            android:paddingTop="25dp"
+            android:text="PROFILE"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </LinearLayout>
 </LinearLayout>

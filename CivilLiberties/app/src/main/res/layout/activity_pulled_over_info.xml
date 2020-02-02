@@ -84,27 +84,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+
+
     <Button
-        android:id="@+id/profileButton"
+        android:id="@+id/recordButton"
         android:layout_width="138dp"
         android:layout_height="82dp"
         android:layout_gravity="center"
         android:background="@drawable/my_button_bg"
-        android:drawableTop="@drawable/ic_profile"
+        android:drawableTop="@drawable/ic_mic"
         android:paddingTop="25dp"
-        android:text="PROFILE"
+        android:text="@string/record_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/recordButton"
-        android:drawableTop="@drawable/ic_mic"
+        android:id="@+id/profileButton"
+        android:drawableTop="@drawable/ic_profile"
+
         android:layout_width="138dp"
         android:layout_height="82dp"
         android:background="@drawable/my_button_bg"
-        android:text="@string/record_button"
+
+        android:text="PROFILE"
         android:paddingTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,6 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
